@@ -15,7 +15,7 @@ export const AddTask = () => {
     setValue,
     formState: { errors },
   } = useForm({
-    defaultValues: { task: "" },
+    defaultValues: { display: false, task: "" },
     resolver: yupResolver(addTaskSchema),
   });
 
